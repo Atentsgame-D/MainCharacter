@@ -14,7 +14,6 @@ public class Inventory : MonoBehaviour
     TextMeshProUGUI changeCoin;
     Animator anim;
 
-
     public int Money 
     { 
         get => money;

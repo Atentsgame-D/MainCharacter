@@ -16,16 +16,14 @@ public class GameManager : MonoBehaviour
     public int talkindex;
 
     Player player;
-    public Player MainPlayer
-    {
-        get => player;
-    }
+    public Player MainPlayer => player;
+
     static GameManager instance = null;
     public static GameManager Inst
     {
         get => instance;
     }
-   
+
     public void Action(GameObject scanObj)
     {
         if (isAction)

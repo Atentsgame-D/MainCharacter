@@ -20,14 +20,12 @@ public class Shop : MonoBehaviour
         {
             store.HideOff();
             inventory.HideOff();
-
             //useText.SetActive(false);
         }
         else
         {
             store.HideOn();
             inventory.HideOn();
-
             //useText.SetActive(true);
         }
     }

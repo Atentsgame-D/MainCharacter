@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be3b4bcb8a71d4b8df4a54d867c3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talkText: {fileID: 0}
   talkManager: {fileID: 0}
   talkPanel: {fileID: 0}
-  talkText: {fileID: 0}
   scanObject: {fileID: 0}
+  PlayerUI: {fileID: 0}
   talkindex: 0

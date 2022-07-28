@@ -47,13 +47,19 @@ MonoBehaviour:
   items:
   - name: Item1
     sprite: {fileID: 21300000, guid: 0a6429b41434485489197e1164631f6d, type: 3}
+    price: 5000
   - name: Item2
     sprite: {fileID: 21300000, guid: ab6d03aa61e6569438b92d6c06e6c5ac, type: 3}
+    price: 3000
   - name: Item3
     sprite: {fileID: 21300000, guid: 91128cbd1689b6645a717e007b6a3f39, type: 3}
+    price: 7000
   - name: Item4
     sprite: {fileID: 21300000, guid: e8c032b41bd8f6246965d85ba8d351f1, type: 3}
+    price: 10000
   - name: Item5
     sprite: {fileID: 21300000, guid: 1398631344da86f4f825e5bee7af3b46, type: 3}
+    price: 15000
   - name: Item6
     sprite: {fileID: 21300000, guid: 755761693f415f346bfa5b8b94a1f907, type: 3}
+    price: 9000
