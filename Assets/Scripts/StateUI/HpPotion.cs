@@ -10,9 +10,10 @@ public class HpPotion : MonoBehaviour
     int potionCount = 10;
     float hpRecovery = 100.0f;
     TextMeshProUGUI text;
-    public Player player;
+    Player player;
     private void Awake()
-    {        
+    {
+        player = GameObject.Find("Player").GetComponent<Player>();
         text = GetComponentInChildren<TextMeshProUGUI>();
     }
     private void Update()

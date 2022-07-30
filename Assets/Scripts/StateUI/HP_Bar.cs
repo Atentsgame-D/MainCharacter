@@ -6,16 +6,15 @@ using System;
 
 public class HP_Bar : MonoBehaviour
 {
-    public Player player;
+    Player player;
     float hpRate = 0.0f;
-    [Tooltip("1초당 회복량")]
-    public float hpRecovery = 1.0f;
 
     TextMeshProUGUI text;
     Transform HpBarRate;
 
     private void Awake()
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
         text = transform.Find("HpBar").GetComponent<TextMeshProUGUI>();
         HpBarRate = transform.Find("CurrentHP").GetComponent<Transform>();
     }
@@ -23,13 +22,7 @@ public class HP_Bar : MonoBehaviour
     {
         player.OnHpChange += hpBarReset;
     }
-    private void Update()
-    {
-        //if(player.Hp < player.MaxHP)
-        //{
-        //    player.Hp += hpRecovery * Time.deltaTime;
-        //}
-    }
+   
     private void hpBarReset(float Hp)
     {
         text.text = $"{Hp:0}/{player.MaxHP}";
